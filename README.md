@@ -12,7 +12,7 @@ type LRU struct {
 	// whatever fields you want here
 }
 
-// Return a new LRU.
+// Return a new LRU with capacity to store limit bytes.
 func NewLru(limit int) *LRU
 
 // Return the maximum number of bytes that your LRU can store.
