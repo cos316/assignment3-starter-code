@@ -1,8 +1,8 @@
-# COS316, Assignment 3: Cache
+# COS316, Assignment 3: In-Memory Cache
 
 ## Due: October 22 at 23:00
 
-# Cache
+# In-Memory Cache
 
 
 In this project, you will implement an abstract interface for an in-memory cache.
