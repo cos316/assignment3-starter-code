@@ -1,8 +1,11 @@
-# LRU Cache
+# COS316, Assignment 3: Cache
 
-Due [Date TBD] at [Time TBD]
+## Due: October 22 at 23:00
 
-In this project, you'll implement an abstract interface for an in-memory cache.
+# Cache
+
+
+In this project, you will implement an abstract interface for an in-memory cache.
 You will build two implementations,
 one using a first-in first-out (FIFO) eviction scheme,
 and the other using a least-recently-used (LRU) eviction scheme.
