@@ -15,9 +15,9 @@ The keys will be strings (perhaps the name of a file or variable), and the value
 
 Because the cache is fixed-size, it *cannot* grow to accept arbitrarily many
 keys and values. We initialize a cache with a `limit` parameter that defines
-how precisely how many bytes worth of keys and values it can grow to accommodate.
+how precisely how many bytes worth of keys and values it can accommodate.
 
-Instead, once the cache becomes too full, we must **evict**
+Instead of growing, once the cache becomes too full, we must **evict**
 some binding that is already in the cache before we are able to **admit** new
 values to the cache.
 
