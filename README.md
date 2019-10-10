@@ -4,7 +4,6 @@
 
 # In-Memory Cache
 
-
 In this project, you will implement an abstract interface for an in-memory cache.
 You will build two implementations,
 one using a first-in first-out (FIFO) eviction scheme,
@@ -77,6 +76,11 @@ one at a time until there is enough room, starting with the binding that was
 added to the cache first (i.e. the oldest binding presently in the cache), and
 proceeding in that same order.
 
+Note that updating the value of an existing key doesn't reset a
+binding's age. If we call `Set()` on a key already in the cache,
+this will change its associated value, but will *not* alter the
+binding's standing with regards to the FIFO eviction order.
+
 ### Least Recently Used (LRU) Eviction
 For the second part of the assignment, you will be implementing a cache using
 a least recently used eviction scheme.
@@ -128,12 +132,6 @@ consider a binding to be *used* any time it is the subject of a `Get()` or
 * Your implementation should be memory-efficient in the sense that it evicts
   values from the cache only as a last resort. If it is possible to store a
   binding in the cache without evicting another, your implementation must do so.
-* A portion of your grade will also be determined by your implementation's speed.   
-  Your implementation should be time-efficient (i.e. faster than brute force).
-  Carefully consider the data structures you will need to implement FIFO and
-  LRU caches with efficient execution time for all operations.
-  In particular, note that iterating over all bindings in the cache to
-  find the oldest/least-recently used will *not* be fast enough.
 
 ## A Note on External Libraries
 * Your code may use any data structures that have been implemented in the Go
