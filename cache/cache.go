@@ -5,6 +5,16 @@ type Stats struct {
 	Misses int
 }
 
+func (stats *Stats) Equals(other *Stats) bool {
+	if stats == nil && other == nil {
+		return true
+	}
+	if stats == nil || other == nil {
+		return false
+	}
+	return stats.Hits == other.Hits && stats.Misses == other.Misses
+}
+
 type Cache interface {
 	// MaxStorage returns the maximum number of bytes this cache can store
 	MaxStorage() int
