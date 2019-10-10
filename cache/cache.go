@@ -35,7 +35,7 @@ type Cache interface {
 	// to make room. Returns true if the binding was added successfully, else false.
 	Set(key string, value []byte) bool
 
-	// Len returns the number of bindings in the LRU.
+	// Len returns the number of bindings in the cache.
 	Len() int
 
 	// Stats returns a pointer to a Stats object that indicates how many hits
