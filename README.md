@@ -1,6 +1,6 @@
 # COS316, Assignment 3: In-Memory Cache
 
-## Due: [Date TBD] at [Time TBD]
+## Due: 10/14 at 23:00 Princeton Time
 
 # In-Memory Cache
 
