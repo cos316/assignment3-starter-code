@@ -1,6 +1,6 @@
 # COS316, Assignment 3: In-Memory Cache
 
-## Due: October 22 at 23:00
+## Due: [Date TBD] at [Time TBD]
 
 # In-Memory Cache
 
@@ -12,7 +12,7 @@ interface provided to you, called `Cache`.
 
 ## API
 
-A cache as a fixed-size store of key-value bindings. In your cache, keys are
+A cache is a fixed-size store of key-value bindings. In your cache, keys are
 strings (e.g., the name of a file or variable), and values are arbitrary-length
 byte slices.
 
@@ -143,7 +143,7 @@ is considered *user* any time is the object of a `Get()` or `Set()` call.
 
 * Your code may use any data structures that have been implemented in the Go
   standard libraries, or any data structures that you implement yourself from
-  scratch, but you may not use data structures defined in third party
+  scratch, but you may not use data structures defined in third-party
   libraries. Your code must not rely on any existing LRU or FIFO implementation,
   regardless of where it came from.
 

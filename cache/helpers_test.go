@@ -13,9 +13,9 @@ import (
 func cacheType(cache Cache) string {
 	switch cache.(type) {
 	case *LRU:
-		return "lru"
+		return "LRU"
 	case *FIFO:
-		return "fifo"
+		return "FIFO"
 	default:
 		return "cache"
 	}
@@ -44,6 +44,6 @@ func bytesEqual(a []byte, b []byte) bool {
 func checkCapacity(t *testing.T, cache Cache, capacity int) {
 	max := cache.MaxStorage()
 	if max != capacity {
-		t.Errorf("Expected FIFO to have %d MaxStorage, but it had %d", capacity, max)
+		t.Errorf("Expected %s to have %d MaxStorage, but it had %d", cacheType(cache), capacity, max)
 	}
 }
