@@ -1,6 +1,6 @@
 # COS316, Assignment 3: In-Memory Cache
 
-## Due: [Date TBD] at [Time TBD]
+## Due: 3/4/2022 at 11:00pm
 
 # In-Memory Cache
 
